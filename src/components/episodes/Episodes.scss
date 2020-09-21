@@ -1,0 +1,37 @@
+@import '../../sass/variables';
+@import '../../sass/colors';
+
+.row:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.row:hover {
+  background-color: #ddd;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+
+  &.heading {
+    font-weight: 700;
+    background: $c-green;
+    color: $c-white;
+
+    .column {
+      padding: 10px;
+    }
+  }
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  padding: 5px;
+  @media screen and (min-width: $bp-mobile) {
+    flex: 1;
+  }
+}
