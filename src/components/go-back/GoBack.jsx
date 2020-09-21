@@ -6,9 +6,9 @@ import { object, string } from 'prop-types';
 import './GoBack.scss';
 
 const GoBack = ({ history, text }) => (
-  <a className="go-back" onClick={() => history.goBack()} href="">
+  <button className="go-back" onClick={() => history.goBack()}>
     {text}
-  </a>
+  </button>
 );
 
 GoBack.propTypes = {
