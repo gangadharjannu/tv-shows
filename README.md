@@ -2,6 +2,10 @@
 
 Shows list of tv-shows along with show details and episode details.
 
+## live version
+
+tv-shows [https://gangadharjannu.github.com/tv-shows](https://gangadharjannu.github.com/tv-shows) to view it in the browser.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
