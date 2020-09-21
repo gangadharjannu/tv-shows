@@ -1,0 +1,12 @@
+@import '../../sass/variables';
+
+.episode {
+  &__image {
+    // I really liked this approach of writing media queries on the go for the ease of maintenance
+    @media screen and (min-width: $bp-mobile) {
+      float: left;
+      width: 100px;
+      margin-right: 10px;
+    }
+  }
+}
