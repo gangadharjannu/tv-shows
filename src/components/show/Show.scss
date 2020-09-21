@@ -1,0 +1,39 @@
+@import '../../sass/variables';
+
+.show {
+  padding: 5px;
+
+  &__title {
+    font-size: 32px;
+  }
+
+  &__image {
+    width: 200px;
+    @media screen and (min-width: $bp-mobile) {
+      width: 120px;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+  // Should not use tag but the paragraph is coming as an embedded html
+
+  &__description p {
+    margin: 0;
+  }
+
+  .image__container {
+    text-align: center;
+    margin: 5px;
+    @media screen and (min-width: $bp-mobile) {
+      float: left;
+      margin: 0 5px;
+    }
+  }
+
+  &__episode-list {
+    margin-top: 15px;
+  }
+}
