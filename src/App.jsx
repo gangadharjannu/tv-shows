@@ -1,25 +1,45 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Fragment } from 'react';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+
+import Show from './components/show/Show';
+
+import RTLIcon from './assets/images/RTL_Nederland.svg';
 import './App.scss';
 
 function App() {
+  // Can be obtained from API but hardcoded for brevity
+  const shows = [
+    { id: 'tt0175058', name: 'The Powerpuff Girls' },
+    { id: 'powerrangers', name: 'Power Rangers mystic force' },
+    { id: 'timonandpumba', name: 'Hakuna matata' },
+    { id: 'tomandjerry', name: 'Tom and Jerry' },
+  ];
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Fragment>
+        <h1 className="header">
+          <Link to="/">
+            <img src={RTLIcon} alt="RTL" className="header__logo" />
+          </Link>
+        </h1>
+
+        <Switch>
+          <Route path="/show-details/:showId">
+            <Show />
+          </Route>
+          <Route path="/">
+            <div className="shows">
+              {shows.map(({ id, name }) => (
+                <Link key={id} to={`/show-details/${id}`} className="show">
+                  {name}
+                </Link>
+              ))}
+            </div>
+          </Route>
+        </Switch>
+      </Fragment>
+    </Router>
   );
 }
 
