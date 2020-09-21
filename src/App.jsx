@@ -16,7 +16,7 @@ function App() {
   ];
 
   return (
-    <Router>
+    <Router basename="/tv-shows">
       <Fragment>
         <h1 className="header">
           <Link to="/">
@@ -28,7 +28,7 @@ function App() {
           <Route path="/show-details/:showId">
             <Show />
           </Route>
-          <Route path="/">
+          <Route exact path="/">
             <div className="shows">
               {shows.map(({ id, name }) => (
                 <Link key={id} to={`/show-details/${id}`} className="show">
