@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/tv-shows/static/css/main.7d37de78.chunk.css",
+    "main.js": "/tv-shows/static/js/main.0856402b.chunk.js",
+    "main.js.map": "/tv-shows/static/js/main.0856402b.chunk.js.map",
+    "runtime-main.js": "/tv-shows/static/js/runtime-main.49286ea2.js",
+    "runtime-main.js.map": "/tv-shows/static/js/runtime-main.49286ea2.js.map",
+    "static/js/2.5457d258.chunk.js": "/tv-shows/static/js/2.5457d258.chunk.js",
+    "static/js/2.5457d258.chunk.js.map": "/tv-shows/static/js/2.5457d258.chunk.js.map",
+    "index.html": "/tv-shows/index.html",
+    "precache-manifest.00381fd7b6bb84c3ae5d28b283768632.js": "/tv-shows/precache-manifest.00381fd7b6bb84c3ae5d28b283768632.js",
+    "service-worker.js": "/tv-shows/service-worker.js",
+    "static/css/main.7d37de78.chunk.css.map": "/tv-shows/static/css/main.7d37de78.chunk.css.map",
+    "static/js/2.5457d258.chunk.js.LICENSE.txt": "/tv-shows/static/js/2.5457d258.chunk.js.LICENSE.txt",
+    "static/media/RTL_Nederland.svg": "/tv-shows/static/media/RTL_Nederland.7f4f7f3c.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.49286ea2.js",
+    "static/js/2.5457d258.chunk.js",
+    "static/css/main.7d37de78.chunk.css",
+    "static/js/main.0856402b.chunk.js"
+  ]
+}
